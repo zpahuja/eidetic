@@ -2,6 +2,7 @@
   "dependencies": {
     "@assistant-ui/react": "^0.5.46",
     "@qdrant/js-client-rest": "^1.11.0",
+    "assistant-ui": "^0.0.7",
     "llamaindex": "^0.5.21",
     "util": "^0.12.5"
   },

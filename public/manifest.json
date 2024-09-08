@@ -2,14 +2,16 @@
     "manifest_version": 3,
     "name": "Eidetic",
     "version": "1.0",
-    "permissions": ["activeTab", "storage"],
+    "permissions": ["activeTab", "storage", "tabs"],
+    "host_permissions": ["<all_urls>"],
     "background": {
       "service_worker": "background.js"
     },
     "content_scripts": [
       {
         "matches": ["<all_urls>"],
-        "js": ["content.js"]
+        "js": ["content.js"],
+        "run_at": "document_idle"
       }
     ],
     "action": {
